@@ -31,11 +31,9 @@ ENV PACKAGES="\
 RUN dnf -y update && dnf -y install $PACKAGES && dnf clean all \
      && git clone https://github.com/firefly-cpp/tcx-test-files.git
 
-# copy our Python script to extract metrics from the files
-# indeed, very easy example
+# copy our Python script to extract metrics from the files [ a straightforward example]
 COPY extract_metrics.py .
 # run script
-# indeed, a straightforward example
 RUN python3 extract_metrics.py
 # open the shell to explore the results...
 CMD ["/bin/sh"]
