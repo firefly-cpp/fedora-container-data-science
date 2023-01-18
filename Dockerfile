@@ -25,7 +25,7 @@ ENV PACKAGES="\
     python-niapy \
     python-niaarm \
     python-sport-activities-features \
-    git \
+    git-core \
 "
 # installing several data science packages and clone datasets
 RUN dnf -y update && dnf -y install $PACKAGES && dnf clean all \
