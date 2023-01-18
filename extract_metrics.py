@@ -5,6 +5,6 @@ tcx_file = TCXFile()
 all_files = tcx_file.read_directory('/var/ds/tcx-test-files/running')
 
 # iterate through files and print total distance of activities
-for i in range(len(all_files)):
-    activity = tcx_file.read_one_file(all_files[i])
+for path in all_files:
+    activity = tcx_file.read_one_file(path)
     print('total distance: ', activity['total_distance'] / 1000)
