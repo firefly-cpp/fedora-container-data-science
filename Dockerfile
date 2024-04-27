@@ -1,5 +1,5 @@
-# pull the latest stable Fedora Linux instance; currently, Fedora 38 is the latest
-FROM registry.fedoraproject.org/fedora:39
+# pull the latest stable Fedora Linux instance; currently, Fedora 40 is the latest
+FROM registry.fedoraproject.org/fedora:40
 
 ENV NAME=fedora-data-science-basic VERSION=0 ARCH=x86_64
 
