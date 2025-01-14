@@ -1,11 +1,16 @@
-# A basic container image for performing data science reproducibility studies based on Fedora Linux
+<h1 align="center">
+    A basic container image for performing data science reproducibility studies based on Fedora Linux
+</h1>
 
-## About
+<p align="center">
+    <a href="#-build--run">🚀 Build & run</a>
+</p>
+
 The repository is devoted to a sample container image built on the top of Fedora Linux that installs some data science dependencies using the "dnf" package manager and runs a python script.
 
-## Build & run
+## 🚀 Build & run
 
-### Docker
+### 🐳 Docker
 
 The image can be built using the following command:
 
@@ -13,13 +18,13 @@ The image can be built using the following command:
 $ docker build --tag ds .
 ```
 
-Run the image using
+Run the image using:
 
 ```sh
 docker run -it --name ds-container -v "$PWD:/var/ds" ds
 ```
 
-### Podman
+### 🦦 Podman
 
 The image can be built using the following command:
 
@@ -27,7 +32,7 @@ The image can be built using the following command:
 $ podman build --tag ds .
 ```
 
-Run the image using
+Run the image using:
 
 ```sh
 podman run -it --name ds-container -v "$PWD:/var/ds" ds
